@@ -1,0 +1,153 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e2e2e2; /* Lighter background for contrast */
+    color: #444; /* Slightly darker text color */
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0); /* Gradient background */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #007BFF; /* Changed to blue */
+    margin-bottom: 20px;
+}
+
+form {
+    margin: 0;
+}
+
+form div, form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="text"], form textarea, form select {
+    width: calc(100% - 16px);
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ccc; /* Softer border color */
+    border-radius: 8px; /* Rounded edges */
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Added shadow transition */
+}
+
+form input[type="text"]:focus, form textarea:focus, form select:focus {
+    border-color: #007BFF; /* Focus border color */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Changed glow effect */
+}
+
+form textarea {
+    height: 100px;
+    resize: none;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: #007BFF; /* Changed to blue */
+    color: #ffffff;
+    border-radius: 8px; /* Rounded edges */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s; /* Added scale effect */
+}
+
+form button:hover {
+    background-color: #0056b3; /* Changed to a darker blue */
+    transform: scale(1.02); /* Slightly larger on hover */
+}
+
+pre {
+    background-color: #f9f9f9; /* Soft background for preformatted text */
+    padding: 10px;
+    border: 1px solid #ddd; /* Border for contrast */
+    border-radius: 4px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 10px 0;
+}
+
+.rule-container {
+    border: 1px solid #ddd; /* Light border */
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fafafa; /* Soft background */
+    margin-bottom: 10px;
+    position: relative;
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.rule-container:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+}
+
+.rule-container label {
+    margin-right: 8px;
+}
+
+#add-rule {
+    margin-top: 10px;
+    background-color: #e0e0e0; /* Light background */
+    color: #333;
+    transition: background-color 0.3s;
+    border-radius: 8px; /* Rounded edges */
+}
+
+#add-rule:hover {
+    background-color: #d0d0d0; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    form input[type="text"], form textarea, form select {
+        width: calc(100% - 14px);
+        padding: 8px;
+    }
+
+    form button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    form textarea {
+        height: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    form input[type="text"], form textarea, form select {
+        width: calc(100% - 12px);
+        padding: 6px;
+    }
+
+    form button {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    form textarea {
+        height: 60px;
+    }
+}
